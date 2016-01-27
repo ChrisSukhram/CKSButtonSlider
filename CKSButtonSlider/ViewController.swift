@@ -19,14 +19,20 @@ class ViewController: UIViewController, CKSButtonSliderDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         redBtn.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
         redBtn.sliderButtonDelegate = self
+        
+        blueBtn.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
+        blueBtn.sliderButtonDelegate = self
+        
+        greenBtn.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
+        greenBtn.sliderButtonDelegate = self
     }
 
     func buttonPressed(button:CKSButtonSlider) {
-        button.setTitle("\(button.currentTick)", forState: .Normal)
+        button.setTitle("Value: \(button.currentTick)", forState: .Normal)
     }
     
     func didSlideTo(sliderButton: CKSButtonSlider, value: Int) {
-        sliderButton.setTitle("Sliding To: \(sliderButton.currentTick)", forState: .Normal)
+        sliderButton.setTitle("\(sliderButton.currentTick)", forState: .Normal)
     }
     
     override func didReceiveMemoryWarning() {
