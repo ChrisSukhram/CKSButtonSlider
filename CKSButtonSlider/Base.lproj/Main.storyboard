@@ -109,7 +109,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.81621503554292762" green="0.81503628796419625" blue="0.82758570429104483" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="saF-D7-XLK" firstAttribute="top" secondItem="PVF-FT-lNc" secondAttribute="bottom" constant="19" id="0qp-0f-b5d"/>
                             <constraint firstItem="saF-D7-XLK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2FH-N8-LRM"/>
