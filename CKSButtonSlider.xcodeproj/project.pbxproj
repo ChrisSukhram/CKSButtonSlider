@@ -12,6 +12,7 @@
 		839496091C5851120041CA6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839496071C5851120041CA6C /* Main.storyboard */; };
 		8394960B1C5851120041CA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8394960A1C5851120041CA6C /* Assets.xcassets */; };
 		8394960E1C5851120041CA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8394960C1C5851120041CA6C /* LaunchScreen.storyboard */; };
+		839496161C5851230041CA6C /* CKSButtonSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839496151C5851230041CA6C /* CKSButtonSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8394960A1C5851120041CA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8394960D1C5851120041CA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8394960F1C5851120041CA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839496151C5851230041CA6C /* CKSButtonSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKSButtonSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				839496031C5851120041CA6C /* AppDelegate.swift */,
 				839496051C5851120041CA6C /* ViewController.swift */,
+				839496151C5851230041CA6C /* CKSButtonSlider.swift */,
 				839496071C5851120041CA6C /* Main.storyboard */,
 				8394960A1C5851120041CA6C /* Assets.xcassets */,
 				8394960C1C5851120041CA6C /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				839496061C5851120041CA6C /* ViewController.swift in Sources */,
 				839496041C5851120041CA6C /* AppDelegate.swift in Sources */,
+				839496161C5851230041CA6C /* CKSButtonSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 				839496141C5851120041CA6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

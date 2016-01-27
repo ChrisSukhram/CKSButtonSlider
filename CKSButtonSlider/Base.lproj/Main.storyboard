@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CKSButtonSlider" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,124 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saF-D7-XLK" customClass="CKSButtonSlider" customModule="CKSButtonSlider" customModuleProvider="target">
+                                <rect key="frame" x="233" y="277" width="135" height="45"/>
+                                <color key="backgroundColor" red="0.2911057145" green="0.6118812106" blue="0.73259467160000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="3pV-kZ-HiG"/>
+                                    <constraint firstAttribute="width" constant="135" id="zjK-wN-oaU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillViewColor">
+                                        <color key="value" red="0.19639763239999999" green="0.4410260916" blue="0.54851865769999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.19639763239999999" green="0.4410260916" blue="0.54851865769999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfTicks">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="currentTick">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVF-FT-lNc" customClass="CKSButtonSlider" customModule="CKSButtonSlider" customModuleProvider="target">
+                                <rect key="frame" x="233" y="212" width="135" height="45"/>
+                                <color key="backgroundColor" red="0.98734092709999999" green="0.2473032922" blue="0.28917303680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="4HA-a6-SV9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="Hvy-wg-AZU"/>
+                                    <constraint firstAttribute="width" constant="135" id="PTH-jC-Xax"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="s0C-mG-m6k"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillViewColor">
+                                        <color key="value" red="0.67829060549999998" green="0.110183537" blue="0.16604474189999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.67829060549999998" green="0.110183537" blue="0.16604474189999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfTicks">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="currentTick">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTm-Zo-hpT" customClass="CKSButtonSlider" customModule="CKSButtonSlider" customModuleProvider="target">
+                                <rect key="frame" x="233" y="342" width="135" height="45"/>
+                                <color key="backgroundColor" red="0.27396151419999998" green="0.76949256659999998" blue="0.52968543769999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="fqf-WZ-yNf"/>
+                                    <constraint firstAttribute="width" constant="135" id="lgR-gP-wU3"/>
+                                    <constraint firstAttribute="height" constant="45" id="mMb-RL-EVS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="w4F-vP-TNw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillViewColor">
+                                        <color key="value" red="0.178996399" green="0.54211556910000003" blue="0.33954256770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.178996399" green="0.54211556910000003" blue="0.33954256770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfTicks">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="currentTick">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81621503554292762" green="0.81503628796419625" blue="0.82758570429104483" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="saF-D7-XLK" firstAttribute="top" secondItem="PVF-FT-lNc" secondAttribute="bottom" constant="19" id="0qp-0f-b5d"/>
+                            <constraint firstItem="saF-D7-XLK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2FH-N8-LRM"/>
+                            <constraint firstItem="wTm-Zo-hpT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9kb-mM-0ph"/>
+                            <constraint firstItem="wTm-Zo-hpT" firstAttribute="top" secondItem="saF-D7-XLK" secondAttribute="bottom" constant="20" id="TsE-C6-WEz"/>
+                            <constraint firstItem="saF-D7-XLK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ye3-IG-9Fg"/>
+                            <constraint firstItem="saF-D7-XLK" firstAttribute="top" secondItem="PVF-FT-lNc" secondAttribute="bottom" constant="20" id="owx-67-ih0"/>
+                            <constraint firstItem="PVF-FT-lNc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r9g-5a-jR8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0qp-0f-b5d"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="blueBtn" destination="saF-D7-XLK" id="BQ3-bY-QzH"/>
+                        <outlet property="greenBtn" destination="wTm-Zo-hpT" id="5HB-rr-Yl0"/>
+                        <outlet property="redBtn" destination="PVF-FT-lNc" id="d9m-E5-wez"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="340" y="389"/>
         </scene>
     </scenes>
 </document>
