@@ -1,6 +1,8 @@
 # CKSButtonSlider
 Custom UIButton with built in Slider functionality
 
+![alt tag](https://raw.github.com/ChrisSukhram/CKSButtonSlider/master/demo.gif)
+
 ## Usage
 ### Design
 Add a UIButton to Storyboard and set the class to             CKSButtonSlider.
