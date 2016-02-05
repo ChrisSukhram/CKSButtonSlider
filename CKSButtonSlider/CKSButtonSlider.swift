@@ -8,10 +8,6 @@
 
 import UIKit
 
-@objc protocol CKSButtonSliderDelegate {
-    func didSlideTo(sliderButton:CKSButtonSlider, value:Int)
-}
-
 @IBDesignable
 public class CKSButtonSlider: UIButton {
     
@@ -68,8 +64,6 @@ public class CKSButtonSlider: UIButton {
     private var initalTouch:CGPoint = CGPointMake(0, 0)
     private var isDragging = false
     
-    var sliderButtonDelegate:CKSButtonSliderDelegate?
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -112,7 +106,7 @@ public class CKSButtonSlider: UIButton {
         
         if isDragging{
             updateFillView(touchLoc)
-            sliderButtonDelegate?.didSlideTo(self, value: currentTick)
+            sendActionsForControlEvents(.ValueChanged)
         }
         
         return super.continueTrackingWithTouch(touch, withEvent: event)

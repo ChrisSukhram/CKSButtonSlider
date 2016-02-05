@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, CKSButtonSliderDelegate {
+class ViewController: UIViewController {
 
     @IBOutlet var redBtn: CKSButtonSlider!
     @IBOutlet var blueBtn: CKSButtonSlider!
@@ -18,21 +18,21 @@ class ViewController: UIViewController, CKSButtonSliderDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         redBtn.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
-        redBtn.sliderButtonDelegate = self
+        redBtn.addTarget(self, action: "sliderButtonValueChanged:", forControlEvents: .ValueChanged)
         
         blueBtn.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
-        blueBtn.sliderButtonDelegate = self
+        blueBtn.addTarget(self, action: "sliderButtonValueChanged:", forControlEvents: .ValueChanged)
         
         greenBtn.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
-        greenBtn.sliderButtonDelegate = self
+        greenBtn.addTarget(self, action: "sliderButtonValueChanged:", forControlEvents: .ValueChanged)
     }
 
     func buttonPressed(button:CKSButtonSlider) {
-        button.setTitle("Value: \(button.currentTick)", forState: .Normal)
+        button.setTitle("Set Value: \(button.currentTick)", forState: .Normal)
     }
     
-    func didSlideTo(sliderButton: CKSButtonSlider, value: Int) {
-        sliderButton.setTitle("\(sliderButton.currentTick)", forState: .Normal)
+    func sliderButtonValueChanged(sliderButton:CKSButtonSlider) {
+        sliderButton.setTitle("Sliding at: \(sliderButton.currentTick)", forState: .Normal)
     }
     
     override func didReceiveMemoryWarning() {
